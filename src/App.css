@@ -1,38 +1,514 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font-roboto: "Nanum Brush Script", Sans-serif;
+  --font-raleway: "Raleway", Sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: var(--font-roboto);
+  background-color: #d1c09b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 150px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.app {
+  padding: 4rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 0.9px;
+  background:#534b34;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search {
+  width: 71%;
+  margin: 4rem 0 2rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1.5rem 1.75rem;
+  border-radius: 2rem;
+  background: #f5dbbb;
+  transition: transform 0.1s ease;
+  border: 2px solid ;
+  border-color: #ab934a; /* Initial transparent border */
 }
 
-.App-link {
-  color: #61dafb;
+.search:hover {
+  transform: scale(1.02);
+  border-color: #534b34; /* Border color on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
+
+
+
+.search input {
+  font-family: "Nanum Brush Script", Sans-serif;
+  flex: 1;
+  border: none;
+  font-size: 1.2rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
+  outline: none;
+  background: #f5dbbb;
+  color: #000000;
+}
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+/* Your existing styles */
+
+/* ... Your existing styles ... */
+
+/* Apply specific styles to movie type input */
+.advanced-search .movie-type-input,
+.advanced-search .release-year-input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ab934a;
+  color: #000000;
+  font-family: var(--font-raleway);
+  margin-right: 1rem;
+  
+}
+
+/* Apply specific styles to the dropdown arrow */
+.advanced-search .movie-type-input,
+.advanced-search .release-year-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 1.5rem;
+  padding-right: 2rem;
+   /* Adjust the padding to accommodate the arrow */
+}
+
+/* Apply specific styles to the dropdown options */
+.advanced-search .movie-type-input,
+.advanced-search .release-year-input {
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  
+}
+
+/* Apply specific styles to the opened dropdown list */
+.advanced-search select::-ms-expand {
+  display: none; /* Hides the default arrow in IE */
+}
+
+.advanced-search select {
+  -webkit-appearance: none; /* Hides the default arrow in Chrome/Safari/Edge */
+  -moz-appearance: none; /* Hides the default arrow in Firefox */
+  appearance: none;
+  text-align: center;
+  background-color: #f5dbbb;
+  border: 2px solid #ab934a; /* Change the background color when opened */
+  color: #000000; /* Change the text color */
+  font-weight: 600; /* Change the border color */
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+  font-family: var(--font-raleway);
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.advanced-search select:hover {
+  background-color: #c4b17b;
+}
+
+/* Apply specific styles to the button */
+.advanced-search button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ab934a;
+  border-radius: 0.7rem;
+  background-color: #f5dbbb;
+  color: #000000;
+  font-family: var(--font-raleway);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.advanced-search button:hover {
+  background-color: #c4b17b;
+}
+
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #1f0f03;
+  font-family: var(--font-raleway);
+}
+
+.container {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.9s cubic-bezier(0.175, 0.885, 0, 1);
+  
+}
+
+.movie div:nth-of-type(1) {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+  color: #000000;
+  filter: grayscale(30%);
+}
+
+.movie:hover {
+  transform: scale(1.05, 1.05);
+  filter: grayscale(30%);
+}
+
+.movie div:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(30%);
+}
+
+.movie div:nth-of-type(2) img {
+  height: 100%;
+  width: 100%;
+  transition: filter 0.2s ease; 
+  filter: grayscale(30%);
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  border-radius: 0.7rem;
+}
+.movie div:nth-of-type(3) {
+  
+    z-index: 2;
+    background-color: rgba(71, 63, 44, 0.36);
+    ;
+    padding: 16px 24px 24px 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.movie div:nth-of-type(3) span {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  color: #e4ddd1;
+  
+}
+
+.movie .year {
+  font-family: sans-serif;
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  background-color: rgba(134, 193, 220, 0.7); /* Adjust background color and opacity as needed */
+  color: #fff; /* Text color */
+  padding: 4px 8px; /* Adjust padding as needed */
+  border-radius: 4px;
+  font-size: 25px; /* Adjust font size as needed */
+  font-weight: bold; /* Adjust font weight as needed */
+}
+
+
+
+.trailer-button {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.trailer-button button {
+  padding: 10px 20px;
+  border: 2px solid #ab934a;
+  border-radius: 8px;
+  background-color: #f5dbbb;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.trailer-button button:hover {
+  background-color: #c4b17b;
+}
+
+.trailer-button a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #ab934a;
+  border-radius: 8px;
+  background-color: #f5dbbb;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.trailer-button a:hover {
+  background-color: #c4b17b;
+}
+
+
+
+/* styles.css */
+
+
+.plot {
+  font-family: "Raleway", sans-serif;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.movie:hover .plot {
+  opacity: 1;
+  display: block;
+  color: #ffffff;
+}
+
+
+
+
+
+.movie div:nth-of-type(3) h3 {
+  font-weight: 1000;
+  margin-top: 1px;
+  font-family: sans-serif;
+  color: rgb(221, 210, 210);
+}
+
+.movie:hover div:nth-of-type(2) img {
+  filter: blur(5px); /* Apply blur effect on hover */
+  opacity: 5; /* Adjust opacity if needed */
+  box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+  
+}
+
+.movie:hover div:nth-of-type(3) {
+  background-color: rgba(37, 36, 36, 0.69);
+}
+
+.movie:hover div:nth-of-type(1) {
+  opacity: 1;
+  color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+    font-weight: 1000;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  /* Adjust the h1 font size */
+  h1 {
+    font-size: 2rem; /* Change the font size as needed for smaller screens */
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+
+  .search {
+    padding: 1rem 1.75rem;
+    width: 100%;
+  }
+
+  .search input {
+    font-size: 1rem;
+    font-weight: 1000;
+  }
+
+  .search img {
+    width: 20px;
+    height: 20px;
+  }
+  
+
+  /* Adjust the h1 font size */
+  h1 {
+    font-size: 1.40rem; /* Change the font size as needed for smaller screens */
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    margin-top: 2rem;
+  }
+
+  .movie {
+    width: "100%";
+    margin: 1rem;
+  }
+
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: 1px solid #ab934a;
+  border-radius: 11px;
+  background-color: #f5dbbb;
+  color: #black;
+  font-family: var(--font-raleway);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid #ab934a;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button:hover {
+  background-color: #black;
+}
+
+.pagination span {
+  margin: 0 1rem;
+  color: #534b34;
+  font-family: Sans-serif;;
+  font-weight: 1000;
+}
+
+
+
+/* Updated CSS for loading spinner and blur effect */
+/* Updated CSS for loading spinner and blur effect */
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Covering the entire screen */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #614f41;
+  border-radius: 50%;
+  border-top-color: #685b50;
+  animation: spin 0.3s ease-in-out infinite;
+  position: absolute; /* Centering the spinner */
+}
+
+@keyframes spin {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+
