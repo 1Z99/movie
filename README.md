@@ -8,7 +8,7 @@
 
 <h2>Live Site</h2>
 
-<p>The website is live and accessible at <a href="https://1z99.github.io/movie/" target="_blank">Artrc Movies</a>. Feel free to explore the extensive movie database and search for your favorite movies!</p>
+<p>The website is live and accessible at <a href="https://1z99.github.io/movie/" target="_blank" rel="noopener noreferrer">Artrc Movies</a>. Feel free to explore the extensive movie database and search for your favorite movies!</p>
 
 <h2>Features</h2>
 
