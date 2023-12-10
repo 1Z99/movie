@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+ArtRC Movies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ArtRC Movies is a powerful movie search application built with React that aims to provide users with comprehensive access to movie information. The platform enables users to search for movies and explore a vast database, offering details about numerous movies.
 
-## Available Scripts
+Concept :
 
-In the project directory, you can run:
+ArtRC Movies stands out by its capability to surface an extensive collection of movies. For instance, searching for a term like "Batman" doesn't just return a couple of movies; it fetches an extensive list that includes over 500 movies related to Batman in the title, cast, or theme. This comprehensive search functionality ensures users can explore a wide range of movies related to their query, offering an immersive movie discovery experience.
 
-### `npm start`
+Live Site :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The website is live and accessible at [ArtRC Movies](https://1z99.github.io/movie/). Feel free to explore the extensive movie database and search for your favorite movies!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Features :
 
-### `npm test`
+Search Movies: Enter any movie title, keyword, or phrase to discover a vast array of movies related to the search term.
+Filtering Options: Narrow down search results by specifying movie type (movie/series) and release year.
+Pagination: Display search results with pagination for better navigation through extensive lists of movies.
+YouTube API Quota Limitation
+Please note that due to YouTube's API quota limitations, the availability of movie trailers may be affected. YouTube allows a limited number of queries per day, and if the trailer is not available, it might be due to reaching the daily quota limit for accessing YouTube's API.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Installation :
 
-### `npm run build`
+Clone the repository.
+Navigate to the project directory.
+Install dependencies using npm install.
+Run the application with npm start.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Usage :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Enter the movie title or relevant keyword in the search bar and press 'Enter' or click the search icon.
+Utilize the dropdowns to filter movies by type (movie/series) or release year.
+Click the "SEARCH" button to apply filters.
+Browse through the extensive movie results, displaying titles, posters, release years, types, and short plot summaries.
+Engage with the "Watch Trailer" button to view available movie trailers.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributing
+Contributions are encouraged! To contribute to ArtRC Movies:
 
-### `npm run eject`
+Fork the repository.
+Create a new branch (git checkout -b feature/improvement).
+Implement your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/improvement).
+Create a pull request.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+License
+This project is licensed under the MIT License.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Credits
+OMDb API: Utilized for fetching movie data.
+YouTube Data API: Used for fetching movie trailers.
