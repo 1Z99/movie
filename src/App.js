@@ -109,7 +109,7 @@ const App = () => {
           A R T R C <span style={{ verticalAlign: 'middle' }}><img className="logo" src="https://i.imgur.com/l4m41WG.png" alt="Number 3"/></span> M O V I E S
         </h1>
       </div>
-     {/* ... (rest of your code) */}
+     {/* nawzat @1z99 github */}
 
       <div className="search" >
          <input 
@@ -118,10 +118,10 @@ const App = () => {
             onKeyPress={handleKeyPress}
             placeholder="ごめん！"
             style={{
-               padding: '8px', // Adjust padding as needed
-               fontSize: '20px', // Adjust font size as needed
-               color: 'black', // Set text color to black
-               // Add any other styles you want here
+               padding: '8px', 
+               fontSize: '20px', 
+               color: 'black', 
+               
             }}
             />
         <img
