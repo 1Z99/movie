@@ -56,7 +56,7 @@
 
 <h2>License</h2>
 
-<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
+<p>This project is licensed under the <a href="[LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)">GNU General Public License (GPL)</a>.</p>
 
 <h2>Credits</h2>
 
