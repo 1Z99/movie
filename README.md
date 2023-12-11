@@ -61,7 +61,7 @@
 <h2>Credits</h2>
 
 <ul>
-  <li>[OMDb API](https://github.com/Omertron/api-omdb): Utilized for fetching movie data.</li>
+  <li><a href="https://github.com/Omertron/api-omdb" target="_blank" rel="noopener noreferrer">Api-omdb , Utilized for fetching movie data.</a>.</li>
   <li>YouTube Data API: Used for fetching movie trailers.</li>
 </ul>
 
