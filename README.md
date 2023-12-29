@@ -27,8 +27,8 @@
 <ol>
   <li>Clone the repository.</li>
   <li>Navigate to the project directory.</li>
-  <li>Install dependencies using <code>npm install</code>.</li>
-  <li>Run the application with <code>npm start</code>.</li>
+  <li>Install dependencies using <code>npm install</code></li>
+  <li>Run the application with <code>npm start</code></li>
 </ol>
 
 <h2>Usage</h2>
