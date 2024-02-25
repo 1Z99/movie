@@ -1,4 +1,4 @@
-<h1>Artrc Movies</h1>
+<h1>Artrc Trailers</h1>
 
 <p>Artrc Movies is a powerful movie search application built with React that aims to provide users with comprehensive access to movie information. The platform enables users to search for movies and explore a vast database, offering details about numerous movies.</p>
 
