@@ -106,7 +106,7 @@ const App = () => {
     <div className="app">
       <div style={{ textAlign: 'center' }}>
         <h1 onClick={handleTitleClick}>
-          A R T R C <span style={{ verticalAlign: 'middle' }}><img className="logo" src="https://i.imgur.com/l4m41WG.png" alt="Number 3"/></span> M O V I E S
+          N A W Z A T <span style={{ verticalAlign: 'middle' }}><img className="logo" src="https://i.imgur.com/l4m41WG.png" alt="Number 3"/></span> M O V I E S
         </h1>
       </div>
      {/* nawzat @1z99 github */}
