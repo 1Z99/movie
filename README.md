@@ -4,7 +4,7 @@
 
 <h2>Concept</h2>
 
-<p>ArtRC Movies stands out by its capability to surface an extensive collection of movies. For instance, searching for a term like "Batman" doesn't just return a couple of movies; it fetches an extensive list that includes over 500 movies related to Batman in the title, cast, or theme. This comprehensive search functionality ensures users can explore a wide range of movies related to their query, offering an immersive movie discovery experience.</p>
+<p>ArtRC Movies stands out by its capability to surface an extensive collection of movies. For instance, searching for a term like "Batman" doesn't just return a couple of movies; it fetches an extensive list that includes over 500 movies related to Batman in the title, cast, or theme . This comprehensive search functionality ensures users can explore a wide range of movies related to their query, offering an immersive movie discovery experience.</p>
 
 <h2>Live Site</h2>
 
